@@ -69,7 +69,7 @@ const SignupForm = () => {
       </button>
 
       {error && <p style={{ color: "red" }}>{error}</p>}
-      {user && <h2>Welcome, {user.newUser.fName}</h2>}
+      {user && <h2>Welcome, {user.newUser.Fname}</h2>}
     </div>
   );
 };

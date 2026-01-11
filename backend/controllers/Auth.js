@@ -13,6 +13,7 @@ async function home(req, res) {
             newUser.save();
             console.log(newUser);
             res.send({
+                newUser,
                 status: 200,
                 message: "User added successfully",
             });
