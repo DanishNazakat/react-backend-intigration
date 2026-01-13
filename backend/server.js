@@ -7,9 +7,9 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
 let PORT=3000;
 const roter=require("./Router/route");
-let mongoose = require('mongoose')
-
-mongoose.connect("mongodb+srv://danishnazakat:ONiYN5yCLwlGYgDZ@cluster0.rpvrbpd.mongodb.net/?appName=Cluster0",
+let mongoose = require('mongoose');
+require('dotenv').config();
+mongoose.connect(process.env.MongoDBSecretkey,
     {
 
 })
